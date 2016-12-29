@@ -1,0 +1,12 @@
+User-Agent: Hisilicon IPCAMERA/1.0
+
+
+User-Agent: hisilicon-Client
+Content-Type: application/octet-stream
+
+
+F:\lzz\7Play_ReplayOcx\OCX\IPCPlayOCX\live_cli\win32\talk_client\hi_talk_client.c
+
+
+?trans=tcp&username=ipcam&password=w54723
+
