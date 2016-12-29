@@ -1,0 +1,26 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: DroneView Mobile_v2.14_apkpure.com.apk
+compressionType: false
+doNotCompress:
+- arsc
+- PNG
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '9'
+  targetSdkVersion: '10'
+sharedLibrary: false
+unknownFiles:
+  com/qq/jce/wup/wup.properties: '8'
+  com/baidu/android/pushservice/assets/defaultconfig.json: '8'
+  src/com/qq/jce/wup/wup.properties: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.2.1-dirty
+versionInfo:
+  versionCode: '122'
+  versionName: '2.14'

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/play" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <SurfaceView android:id="@id/playSurface" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <android.opengl.GLSurfaceView android:layout_gravity="center" android:id="@id/myhsurfaceview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:layout_gravity="center" android:id="@id/vedioview" android:background="#ff00ffff" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" />
+    <ImageView android:layout_gravity="center" android:id="@id/vedioview_standard" android:background="#ff000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="matrix" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/progressLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleLarge" />
+        <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/connecting" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_show_Info" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="45.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/show_online" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="/" />
+            <TextView android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/show_lan" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textColor="#ff000000" android:id="@id/txtResolution" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="0x0" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="/" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="FPS:" />
+            <TextView android:textColor="#ff000000" android:id="@id/txtFPS" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="0" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="/" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="bps:" />
+            <TextView android:textColor="#ff000000" android:id="@id/txtBPS" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="0kps" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/show_temp" />
+            <TextView android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="0" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="/" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/show_fahrenheit" />
+            <TextView android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="0" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="/" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/show_heartrate" />
+            <TextView android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="0" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="/" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/show_rec" />
+            <TextView android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="NO" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/show_online_num" />
+            <TextView android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="1" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="/" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/show_frame_ration" />
+            <TextView android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="0" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="/" />
+            <TextView android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="50" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/osdlayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:id="@android:attr/theme" android:background="@drawable/top" android:padding="5.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <TextView android:textSize="24.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/live_view_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6.0dip" android:text="@string/live_view_title" />
+        </LinearLayout>
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/color_black" android:id="@id/textosd" android:background="@drawable/background_osd" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <TextView android:textSize="18.0sp" android:textStyle="italic" android:textColor="@color/color_black" android:id="@id/text_bps" android:background="@drawable/background_osd" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="60.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/color_black" android:id="@id/textTimeStamp" android:background="@drawable/background_osd" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <LinearLayout android:gravity="center" android:id="@id/video_snap_linear" android:background="#00000000" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/img_record" android:background="#00000000" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/record_32" />
+            <ImageView android:id="@id/img_snap" android:background="#00000000" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/snap_32" />
+            <ImageView android:id="@id/img_open_lock" android:background="#00000000" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/lock_open" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/video_lu_linear" android:background="#00000000" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="48.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ffff0033" android:id="@id/sdcard_size" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" />
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ffff0033" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/videoing" />
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ffff0033" android:id="@id/textTimevideoing" android:background="#00000000" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/top_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignParentTop="true">
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/color_white" android:id="@id/cameraName" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ImageButton android:layout_gravity="center" android:id="@id/login_top_back" android:background="@drawable/ptz_takepic_selector" android:layout_width="65.0dip" android:layout_height="45.0dip" android:src="@drawable/exitbutton" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+                <ImageButton android:id="@id/ptz_check_pi" android:background="#00000000" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/rotating1" />
+                <ImageButton android:id="@id/ptz_resolution" android:background="@drawable/ptz_takepic_selector" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/middle" />
+                <Button android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/preset" android:background="@drawable/ptz_takepic_selector" android:visibility="gone" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginRight="5.0dip" android:text="@string/preset_show" />
+                <ImageButton android:id="@id/ptz_hori_mirror" android:background="#00000000" android:visibility="gone" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/ptz_hori_mirror" />
+                <ImageButton android:id="@id/ptz_vert_mirror" android:background="#00000000" android:visibility="gone" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/ptz_vert_mirror" />
+                <ImageButton android:id="@id/ptz_hori_tour" android:background="#00000000" android:visibility="gone" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/ptz_hori_tour" />
+                <ImageButton android:id="@id/ptz_vert_tour" android:background="#00000000" android:visibility="gone" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/ptz_vert_tour" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/ptz_othersetview_record" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/ptz_othersetview_call" android:layout_alignParentLeft="true">
+            <RelativeLayout android:orientation="horizontal" android:id="@id/ptz_platform_record" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageButton android:id="@id/img_btn_record" android:background="@drawable/ptz_takepic_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/record_48" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/ptz_platform_snap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageButton android:id="@id/img_btn_snap" android:background="@drawable/ptz_takepic_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/snap_48" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/ptz_platform_open_lock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageButton android:id="@id/img_btn_open_lock" android:background="@drawable/ptz_takepic_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/key" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/ptz_othersetview_call" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true">
+            <RelativeLayout android:orientation="horizontal" android:id="@id/ptz_platform_call" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageButton android:id="@id/img_btn_call_stop" android:background="@drawable/ptz_takepic_selector" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/call_stop" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/ptz_platform_call1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageButton android:id="@id/img_btn_call_off" android:background="@drawable/ptz_takepic_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/call_stop" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/ptz_platform_call2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageButton android:id="@id/img_btn_call_start" android:background="@drawable/ptz_takepic_selector" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/call_start" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/ptz_othersetview_anim" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <HorizontalScrollView android:layout_gravity="center_vertical" android:id="@id/ptz_othersetview" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ptz_platform" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="5.0dip">
+                <Button android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/ptz_audio" android:background="@drawable/ptz_takepic_selector" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginRight="5.0dip" android:text="ON" />
+                <ImageButton android:id="@id/ptz_microphone" android:background="#00000000" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/ptz_microphone_off" />
+                <ImageButton android:id="@id/ptz_takepic" android:background="@drawable/ptz_takepic_selector" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/ptz_takepic" />
+                <ImageButton android:id="@id/ptz_takevideo" android:background="@drawable/ptz_takepic_selector" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/ptz_takevideo" />
+                <ImageButton android:id="@id/ptz_brightness" android:background="@drawable/ptz_takepic_selector" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/ptz_brightness" />
+                <ImageButton android:id="@id/ptz_contrast" android:background="@drawable/ptz_takepic_selector" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/ptz_contrast" />
+                <ImageButton android:id="@id/ptz_default_set" android:background="@drawable/ptz_takepic_selector" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/ptz_default_set" />
+                <ImageButton android:id="@id/ptz_playmode" android:background="@drawable/ptz_takepic_selector" android:visibility="gone" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/ptz_playmode_enlarge" />
+                <ImageButton android:id="@id/led_open" android:background="@drawable/ptz_takepic_selector" android:visibility="gone" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/led_open" />
+                <ImageButton android:id="@id/led_close" android:background="@drawable/ptz_takepic_selector" android:visibility="gone" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/led_close" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+</FrameLayout>

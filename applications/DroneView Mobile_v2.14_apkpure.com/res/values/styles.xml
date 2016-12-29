@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light" />
+    <style name="AppTheme" parent="@style/AppBaseTheme" />
+    <style name="scroll_view_bg_style">
+        <item name="android:background">@color/color_white</item>
+    </style>
+    <style name="scroll_layout_style">
+        <item name="android:background">@drawable/background_white_corner</item>
+    </style>
+    <style name="main_bg_style">
+        <item name="android:background">@color/color_white</item>
+    </style>
+    <style name="normal_bg_style">
+        <item name="android:background">@color/color_bg</item>
+    </style>
+    <style name="live_bg_style">
+        <item name="android:background">@color/color_black</item>
+    </style>
+    <style name="live_control_style">
+        <item name="android:background">@drawable/live_control_selector</item>
+    </style>
+    <style name="about_title_style">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/main_text_color</item>
+        <item name="android:layout_marginBottom">5.0dip</item>
+    </style>
+    <style name="about_content_style">
+        <item name="android:textSize">@dimen/text_normal_size</item>
+        <item name="android:background">@drawable/detailpanel_bg</item>
+        <item name="android:padding">15.0dip</item>
+    </style>
+    <style name="top_bg_style">
+        <item name="android:background">@drawable/top_band_shape</item>
+    </style>
+    <style name="bg_style">
+        <item name="android:background">@color/color_bg</item>
+    </style>
+    <style name="AnimationPreview">
+        <item name="android:windowEnterAnimation">@anim/zoomin</item>
+        <item name="android:windowExitAnimation">@anim/zoomout</item>
+    </style>
+</resources>

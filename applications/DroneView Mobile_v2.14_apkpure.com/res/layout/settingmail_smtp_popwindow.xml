@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scrollView1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/linearLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textColor="@color/color_white" android:gravity="center" android:id="@id/mail_126" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/mail_126" />
+            <ImageView android:id="@id/imageView1" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@color/color_line" />
+            <TextView android:textColor="@color/color_white" android:gravity="center" android:id="@id/mail_163" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/mail_163" />
+            <ImageView android:id="@id/imageView2" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@color/color_line" />
+            <TextView android:textColor="@color/color_white" android:gravity="center" android:id="@id/mail_21cn" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/mail_21cn" />
+            <ImageView android:id="@id/imageView3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@color/color_line" />
+            <TextView android:textColor="@color/color_white" android:gravity="center" android:id="@id/mail_gmail" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/mail_gmail" />
+            <ImageView android:id="@id/imageView6" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@color/color_line" />
+            <TextView android:textColor="@color/color_white" android:gravity="center" android:id="@id/mail_qq" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/mail_qq" />
+            <ImageView android:id="@id/imageView7" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@color/color_line" />
+            <TextView android:textColor="@color/color_white" android:gravity="center" android:id="@id/mail_sina" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/mail_sina" />
+            <ImageView android:id="@id/imageView8" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@color/color_line" />
+            <TextView android:textColor="@color/color_white" android:gravity="center" android:id="@id/mail_sohu" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/mail_sohu" />
+            <ImageView android:id="@id/imageView9" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@color/color_line" />
+            <TextView android:textColor="@color/color_white" android:gravity="center" android:id="@id/mail_tom" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/mail_tom" />
+            <ImageView android:id="@id/imageView10" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@color/color_line" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

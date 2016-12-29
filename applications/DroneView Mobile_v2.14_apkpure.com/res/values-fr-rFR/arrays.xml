@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="record_mode">
+        <item>Proche</item>
+        <item>Alarme(1 Min)</item>
+        <item>Alarme(3 Min)</item>
+        <item>Alarme(5 Min)</item>
+    </string-array>
+</resources>

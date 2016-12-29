@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/help_button_view" android:padding="4.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textColorLink="@color/encode_view" android:id="@id/openLockPassword" android:background="@drawable/signinact_edit_selector" android:layout_width="fill_parent" android:layout_height="35.0dip" android:cursorVisible="true" android:maxLines="1" android:inputType="textPassword" />
+    <TableLayout android:gravity="center" android:id="@id/keyboard" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TableRow android:gravity="center" android:layout_marginTop="10.0dip">
+            <ImageView android:id="@id/key01" android:src="@drawable/key01" />
+            <ImageView android:id="@id/key02" android:layout_marginLeft="7.0dip" android:src="@drawable/key02" />
+            <ImageView android:id="@id/key03" android:layout_marginLeft="7.0dip" android:src="@drawable/key03" />
+            <ImageView android:id="@id/key04" android:layout_marginLeft="7.0dip" android:src="@drawable/key04" />
+        </TableRow>
+        <TableRow android:gravity="center" android:layout_marginTop="7.0dip">
+            <ImageView android:id="@id/key05" android:src="@drawable/key05" />
+            <ImageView android:id="@id/key06" android:layout_marginLeft="7.0dip" android:src="@drawable/key06" />
+            <ImageView android:id="@id/key07" android:layout_marginLeft="7.0dip" android:src="@drawable/key07" />
+            <ImageView android:id="@id/keydel" android:layout_marginLeft="7.0dip" android:src="@drawable/keydel" />
+        </TableRow>
+        <TableRow android:gravity="center" android:layout_marginTop="7.0dip" android:layout_marginBottom="10.0dip">
+            <ImageView android:id="@id/key08" android:src="@drawable/key08" />
+            <ImageView android:id="@id/key09" android:layout_marginLeft="7.0dip" android:src="@drawable/key09" />
+            <ImageView android:id="@id/key00" android:layout_marginLeft="7.0dip" android:src="@drawable/key00" />
+            <ImageView android:id="@id/keyfin" android:layout_marginLeft="7.0dip" android:src="@drawable/keyfin" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

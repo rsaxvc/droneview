@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="WIFI_AP_PREFIX">
+        <item>DRONEVIEW-</item>
+    </string-array>
+    <string-array name="sharemode">
+        <item>Text share UID</item>
+        <item>Photo sharing UID</item>
+    </string-array>
+    <string-array name="record_mode">
+        <item>Close</item>
+        <item>Alarm(1 Min)</item>
+        <item>Alarm(3 Min)</item>
+        <item>Alarm(5 Min)</item>
+    </string-array>
+    <string-array name="event_menu">
+        <item>Option</item>
+        <item>Delete 10 Earliest Activities</item>
+        <item>Delete All Activities</item>
+        <item>Settings</item>
+    </string-array>
+    <string-array name="main_menu">
+        <item>Device</item>
+        <item>Activity</item>
+        <item>Photos</item>
+        <item>Videos</item>
+        <item>Edit</item>
+        <item>About</item>
+    </string-array>
+</resources>

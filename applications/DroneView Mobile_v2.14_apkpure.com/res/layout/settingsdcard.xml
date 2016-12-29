@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/bg_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/top" android:layout_width="fill_parent" android:layout_height="50.0dip" style="@style/top_bg_style">
+        <ImageButton android:textSize="@dimen/text_title_size" android:textColor="@color/color_white" android:id="@id/back" android:background="@drawable/btn_back_selector" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/back_32" android:layout_weight="1.0" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/color_white" android:layout_gravity="center_vertical" android:id="@id/tv_camera_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/setting_sdcard" android:shadowColor="@color/color_shadow" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_centerInParent="true" />
+        <Button android:textSize="@dimen/text_title_size" android:textColor="@color/color_white" android:id="@id/ok" android:background="@drawable/btnselector" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="33.0dip" android:layout_marginRight="10.0dip" android:text="@string/done" android:layout_weight="1.0" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ScrollView android:id="@id/scrollView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/top" style="@style/normal_bg_style">
+        <LinearLayout android:orientation="vertical" android:id="@id/linearLayout3" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip" style="@style/scroll_layout_style">
+                <RelativeLayout android:gravity="center_vertical" android:id="@id/linearLayout1" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_margin="5.0dip">
+                    <TextView android:textColor="@color/main_text_color" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sdcard_total" android:layout_alignParentLeft="true" />
+                    <TextView android:textColor="@color/main_text_color" android:id="@id/tv_sd_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <ImageView android:id="@id/imageView1" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:src="@color/color_grey" />
+                <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_margin="5.0dip">
+                    <TextView android:textColor="@color/main_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sdcard_remain" android:layout_alignParentLeft="true" />
+                    <TextView android:textColor="@color/main_text_color" android:id="@id/tv_sd_remain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <ImageView android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:src="@color/color_grey" />
+                <RelativeLayout android:id="@id/layout_record_mode" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/main_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/sdcard_recordmode" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/img_record_mode" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rightdown_selector" android:layout_alignParentRight="true" />
+                    <Spinner android:id="@id/spinner_record_mode" android:layout_width="wrap_content" android:layout_height="44.0dip" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <ImageView android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:src="@color/color_grey" />
+                <RelativeLayout android:gravity="center_vertical" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/main_text_color" android:id="@id/sdstate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/sdcard_state" android:layout_centerVertical="true" />
+                    <TextView android:textColor="@color/main_text_color" android:id="@id/tv_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_toRightOf="@id/sdstate" android:layout_centerVertical="true" />
+                    <Button android:id="@id/btn_format" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sdcard_format" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <LinearLayout android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/main_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/sdcard_recordlength" />
+                    <Spinner android:id="@id/spinner_record_length" android:layout_width="wrap_content" android:layout_height="44.0dip" />
+                </LinearLayout>
+                <ImageView android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:src="@color/color_grey" />
+                <RelativeLayout android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/main_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sdcard_recordtime" android:layout_centerVertical="true" />
+                    <CheckBox android:id="@id/cbx_record_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <ImageView android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:src="@color/color_grey" />
+                <Button android:textColor="@color/main_text_color" android:id="@id/btnFormatSDCard" android:background="@drawable/btn_selector" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/stringformat_sd_card" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

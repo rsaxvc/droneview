@@ -1,0 +1,50 @@
+rsaxvc@x220:~$ /sbin/route -n
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+0.0.0.0         192.168.234.1   0.0.0.0         UG    600    0        0 wlp3s0
+192.168.234.0   0.0.0.0         255.255.255.0   U     600    0        0 wlp3s0
+rsaxvc@x220:~$ nmap 192.168.234.1 -p 1-
+
+Starting Nmap 7.31 ( https://nmap.org ) at 2016-12-28 22:21 CST
+Nmap scan report for 192.168.234.1
+Host is up (0.0046s latency).
+Not shown: 65530 closed ports
+PORT      STATE SERVICE
+5/tcp     open  rje
+23/tcp    open  telnet
+80/tcp    open  http
+554/tcp   open  rtsp
+40238/tcp open  unknown
+
+Nmap done: 1 IP address (1 host up) scanned in 281.40 seconds
+
+
+rsaxvc@x220:~/code/droneview$ nc 192.168.234.1 5
+GET /
+HTTP/1.1 400 Bad Request
+Cache-Control: no-cache
+Server: Hisilicon Ipcam
+
+rsaxvc@x220:~/code/droneview$ nc 192.168.234.1 80
+GET /
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <meta http-equiv="refresh" content="0;url=/web/index.html">
+  <title></title>
+
+</head>
+
+
+<body>
+</body>
+</html>
+rsaxvc@x220:~/code/droneview$ nc 192.168.234.1 40238
+GET /
+rsaxvc@x220:~/code/droneview$ 
+
+
+mplayer rtsp://192.168.234.1:554/11
+

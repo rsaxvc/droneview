@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/bg_bule" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextView android:textSize="24.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/talk_view_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="" />
+    </LinearLayout>
+    <ImageView android:id="@id/talk_view_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/device_scene" android:layout_above="@id/stop_audio" android:layout_centerInParent="true" />
+    <ImageButton android:id="@id/stop_audio" android:background="@drawable/background_red_corner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" android:src="@drawable/ic_action_end_call" android:layout_alignParentBottom="true" android:onClick="stopAudio" />"
+</RelativeLayout>

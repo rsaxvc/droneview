@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scrollView1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/linearLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:gravity="center" android:id="@id/preset_no" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/alerm_preset_no" />
+            <ImageView android:id="@id/imageView1" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@color/color_line" />
+            <TextView android:gravity="center" android:id="@id/preset_1" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="1" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@color/color_line" />
+            <TextView android:gravity="center" android:id="@id/preset_2" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="2" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@color/color_line" />
+            <TextView android:gravity="center" android:id="@id/preset_3" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="3" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@color/color_line" />
+            <TextView android:gravity="center" android:id="@id/preset_4" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="4" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@color/color_line" />
+            <TextView android:gravity="center" android:id="@id/preset_5" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="5" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@color/color_line" />
+            <TextView android:gravity="center" android:id="@id/preset_6" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="6" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@color/color_line" />
+            <TextView android:gravity="center" android:id="@id/preset_7" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="7" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@color/color_line" />
+            <TextView android:gravity="center" android:id="@id/preset_8" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="8" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@color/color_line" />
+            <TextView android:gravity="center" android:id="@id/preset_9" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="9" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@color/color_line" />
+            <TextView android:gravity="center" android:id="@id/preset_10" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="10" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@color/color_line" />
+            <TextView android:gravity="center" android:id="@id/preset_11" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="11" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@color/color_line" />
+            <TextView android:gravity="center" android:id="@id/preset_12" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="12" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@color/color_line" />
+            <TextView android:gravity="center" android:id="@id/preset_13" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="13" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@color/color_line" />
+            <TextView android:gravity="center" android:id="@id/preset_14" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="14" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@color/color_line" />
+            <TextView android:gravity="center" android:id="@id/preset_15" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="15" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@color/color_line" />
+            <TextView android:gravity="center" android:id="@id/preset_16" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="16" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@color/color_line" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/call_video_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <SurfaceView android:id="@id/playSurface" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <android.opengl.GLSurfaceView android:layout_gravity="center" android:id="@id/myhsurfaceview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip" />
+    <ImageView android:layout_gravity="center" android:id="@id/vedioview" android:background="#55ffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" />
+    <ImageView android:layout_gravity="center" android:id="@id/vedioview_standard" android:background="#ff000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="matrix" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/progressLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleLarge" />
+        <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/search_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Searching for DroneView Wi-Fi" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/control_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <LinearLayout android:layout_gravity="center|right" android:orientation="horizontal" android:id="@id/snap_layout" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginBottom="2.0dip" android:layout_weight="1.0">
+                <ImageButton android:id="@id/snap_sel_local" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/drone_sel_local" android:scaleType="fitEnd" />
+                <ImageButton android:id="@id/snap_sel_card" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/drone_sel_card" android:scaleType="fitEnd" />
+                <ImageButton android:id="@id/drone_snap" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/drone_photo" android:scaleType="fitEnd" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center|right" android:orientation="horizontal" android:id="@id/record_layout" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginBottom="2.0dip" android:layout_weight="1.0">
+                <ImageButton android:id="@id/record_sel_local" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/drone_sel_local" android:scaleType="fitEnd" />
+                <ImageButton android:id="@id/record_sel_card" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/drone_sel_card" android:scaleType="fitEnd" />
+                <ImageButton android:id="@id/drone_record" android:background="#00000000" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/drone_video" android:scaleType="fitEnd" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center|right" android:orientation="horizontal" android:id="@id/gallery_layout" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginBottom="2.0dip" android:layout_weight="1.0">
+                <ImageButton android:id="@id/gallery_sel_local" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/drone_sel_local" android:scaleType="fitEnd" />
+                <ImageButton android:id="@id/gallery_sel_card" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/drone_sel_card" android:scaleType="fitEnd" />
+                <ImageButton android:id="@id/drone_gallery" android:background="#00000000" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/drone_gallery" android:scaleType="fitEnd" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center|right" android:orientation="horizontal" android:id="@id/setup_layout" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <ImageButton android:id="@id/drone_do" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/drone_do" android:scaleType="fitEnd" />
+                <ImageButton android:id="@id/drone_setup" android:background="#00000000" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/drone_setup" android:scaleType="fitEnd" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <LinearLayout android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <LinearLayout android:layout_gravity="center|right" android:orientation="vertical" android:id="@id/record_show_layout" android:layout_width="80.0dip" android:layout_height="0.0dip" android:layout_marginRight="20.0dip" android:layout_weight="3.0">
+                <ImageButton android:layout_gravity="center" android:id="@id/drone_record_show" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/drone_record" />
+                <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/drone_record_text" android:background="#66000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/setup_show_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageButton android:id="@id/drone_return" android:background="#00000000" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/drone_return" android:scaleType="fitCenter" android:layout_alignParentLeft="true" />
+            <ImageButton android:id="@id/drone_save" android:background="#00000000" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/drone_save" android:scaleType="fitCenter" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/setup_show_text_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="40.0dip" android:layout_marginBottom="10.0dip" android:layout_centerHorizontal="true">
+            <LinearLayout android:orientation="horizontal" android:id="@id/setup_show_text_layout1" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="10.0dip" android:layout_weight="1.0">
+                <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="5.0">
+                    <TextView android:textSize="@dimen/drone_setup_texte_size" android:textColor="@color/drone_setup_text_color" android:background="@drawable/button_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="WiFi Name" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="4.0">
+                    <EditText android:textSize="@dimen/drone_setup_texte_size" android:id="@id/edit_wifi_name" android:background="@drawable/bg_edittext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="50.0dip" android:singleLine="true" android:maxLength="10" android:digits="0123456789abcdefghigklmnopqrstuvwxyz" android:layout_centerVertical="true" android:inputType="text" style="?android:attr/textViewStyle" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="5.0dip" android:layout_weight="1.0">
+                <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="5.0">
+                    <TextView android:textSize="@dimen/drone_setup_texte_size" android:textColor="@color/drone_setup_text_color" android:background="@drawable/button_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Brightness" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="4.0">
+                    <SeekBar android:id="@id/brightseekBar" android:background="@drawable/seek_shape" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="50.0dip" android:maxHeight="4.0dip" android:max="100" android:progressDrawable="@drawable/po_seekbar" android:minHeight="4.0dip" android:thumb="@drawable/seekbar_thumb" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="5.0dip" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+                <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="5.0">
+                    <TextView android:textSize="@dimen/drone_setup_texte_size" android:textColor="@color/drone_setup_text_color" android:background="@drawable/button_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Contrast" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="4.0">
+                    <SeekBar android:id="@id/contrastseekBar" android:background="@drawable/seek_shape" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="50.0dip" android:maxHeight="4.0dip" android:max="100" android:progressDrawable="@drawable/po_seekbar" android:minHeight="4.0dip" android:thumb="@drawable/seekbar_thumb" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="5.0dip" android:layout_weight="1.0">
+                <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="5.0">
+                    <TextView android:textSize="@dimen/drone_setup_texte_size" android:textColor="@color/drone_setup_text_color" android:background="@drawable/button_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Date Code" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="4.0">
+                    <ImageButton android:id="@id/drone_date_code_on" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:src="@drawable/switch_on" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <ImageButton android:id="@id/drone_date_code_off" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:src="@drawable/switch_off" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/drone_sensor" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="5.0dip" android:layout_weight="1.0">
+                <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="5.0">
+                    <TextView android:textSize="@dimen/drone_setup_texte_size" android:textColor="@color/drone_setup_text_color" android:background="@drawable/button_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sensor" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="4.0">
+                    <ImageButton android:id="@id/drone_sensor_on" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:src="@drawable/switch_on" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <ImageButton android:id="@id/drone_sensor_off" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:src="@drawable/switch_off" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="5.0dip" android:layout_weight="1.0">
+                <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="5.0">
+                    <TextView android:textSize="@dimen/drone_setup_texte_size" android:textColor="@color/drone_setup_text_color" android:gravity="center" android:background="@drawable/button_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rotate View" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="4.0">
+                    <ImageButton android:id="@id/drone_view_rotate_on" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:src="@drawable/switch_on" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <ImageButton android:id="@id/drone_view_rotate_off" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:src="@drawable/switch_off" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="5.0dip" android:layout_weight="1.0">
+                <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="5.0" />
+                <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="4.0">
+                    <Button android:textSize="@dimen/drone_setup_texte_size" android:id="@id/drone_reset" android:background="@drawable/button_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:scaleType="fitCenter" android:text="Reset" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/no_sd_layout" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginRight="10.0dip" android:layout_weight="3.0">
+                <TextView android:textSize="25.0sp" android:textStyle="bold" android:textColor="@color/drone_setup_text_bg_color" android:layout_gravity="center" android:id="@id/no_sd_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:text="No Memory Card Installed" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="left" android:layout_gravity="left" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <LinearLayout android:layout_gravity="left" android:orientation="vertical" android:id="@id/rssi" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginRight="10.0dip" android:layout_weight="3.0">
+                <TextView android:textSize="25.0sp" android:textStyle="bold" android:textColor="@color/drone_setup_text_color" android:layout_gravity="left" android:id="@id/ap_name_text" android:background="@drawable/button_shape" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:text="" />
+                <TextView android:textSize="25.0sp" android:textStyle="bold" android:textColor="@color/drone_setup_text_color" android:layout_gravity="left" android:id="@id/wait_sec_text" android:background="@drawable/button_shape" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:text="" />
+                <TextView android:textSize="25.0sp" android:textStyle="bold" android:textColor="@color/drone_setup_text_color" android:layout_gravity="left" android:id="@id/rssi_text" android:background="@drawable/button_shape" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/info" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="top" android:layout_gravity="top" android:orientation="horizontal" android:id="@id/debug_info" android:background="#00000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="12.0sp" android:textColor="#88ffffff" android:layout_gravity="left" android:id="@id/rssi_value" android:background="#66000000" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:text="-50" />
+            <TextView android:textSize="12.0sp" android:textColor="#88ffffff" android:layout_gravity="left" android:id="@id/step_text" android:background="#66000000" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:text="1" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/left_control_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageButton android:id="@id/drone_wifi" android:background="#ff009bdf" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/drone_wifi" android:scaleType="fitEnd" android:tint="#ffffff00" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

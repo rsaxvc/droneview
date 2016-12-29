@@ -1,0 +1,7 @@
+HiSilicon Hi3518
+
+http://ipcamsupport.com/ipcam_faq.html
+
+Serial Number:QVCVvzhROpFMEtDySbXSOPwEsdbubvyM
+Hard Ver: ipc4288p-ytf-ov9712d
+Software Ver: V3.42.88.4808-X10-Build:20151015R

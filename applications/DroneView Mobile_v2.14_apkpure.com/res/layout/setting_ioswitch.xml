@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/bg_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/setting_open_lock" android:layout_width="fill_parent" android:layout_height="50.0dip" style="@style/top_bg_style">
+        <ImageButton android:textSize="@dimen/text_title_size" android:textColor="@color/color_white" android:id="@id/setting_switch_back" android:background="@drawable/btn_back_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/back_32" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+        <Button android:textColor="@color/color_white" android:id="@id/setting_switch_ok" android:background="@drawable/btnselector" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="33.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/done" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/color_white" android:id="@id/setting_lock_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_ioswitch" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/setting_open_lock" android:layout_alignParentLeft="true" android:layout_alignParentRight="true">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/background_white_corner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="@color/color_black" android:id="@id/textView4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:text="@string/open_lock_setting_time" />
+            <LinearLayout android:orientation="horizontal" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="0.0dip" android:text="1" />
+                <CheckBox android:layout_gravity="right" android:id="@id/cbx_switch_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+                <EditText android:id="@id/edit_switch_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:singleLine="true" android:maxLength="4" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="0.0dip" android:text="2" />
+                <CheckBox android:layout_gravity="right" android:id="@id/cbx_switch_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+                <EditText android:id="@id/edit_switch_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:singleLine="true" android:maxLength="4" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="0.0dip" android:text="3" />
+                <CheckBox android:layout_gravity="right" android:id="@id/cbx_switch_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+                <EditText android:id="@id/edit_switch_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:singleLine="true" android:maxLength="4" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="0.0dip" android:text="4" />
+                <CheckBox android:layout_gravity="right" android:id="@id/cbx_switch_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+                <EditText android:id="@id/edit_switch_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:singleLine="true" android:maxLength="4" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="0.0dip" android:text="5" />
+                <CheckBox android:layout_gravity="right" android:id="@id/cbx_switch_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+                <EditText android:id="@id/edit_switch_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:singleLine="true" android:maxLength="4" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="0.0dip" android:text="6" />
+                <CheckBox android:layout_gravity="right" android:id="@id/cbx_switch_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+                <EditText android:id="@id/edit_switch_6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:singleLine="true" android:maxLength="4" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="0.0dip" android:text="7" />
+                <CheckBox android:layout_gravity="right" android:id="@id/cbx_switch_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+                <EditText android:id="@id/edit_switch_7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:singleLine="true" android:maxLength="4" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="0.0dip" android:text="8" />
+                <CheckBox android:layout_gravity="right" android:id="@id/cbx_switch_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+                <EditText android:id="@id/edit_switch_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:singleLine="true" android:maxLength="4" />
+            </LinearLayout>
+            <ImageView android:id="@id/imageView2" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:src="@color/color_grey" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

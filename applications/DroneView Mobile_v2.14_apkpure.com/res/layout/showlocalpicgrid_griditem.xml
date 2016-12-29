@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/imageView1" android:layout_width="100.0dip" android:layout_height="70.0dip" android:src="@drawable/about" android:scaleType="fitXY" />
+        <TextView android:textColor="#ffff0000" android:layout_gravity="center_horizontal" android:id="@id/tvbadfileflag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/local_video_badfile" />
+        <ImageView android:layout_gravity="center" android:id="@id/playvideo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/play_video" android:scaleType="center" />
+        <ImageView android:layout_gravity="center|right|top" android:id="@id/del_hook" android:background="@drawable/del_hook" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:scaleType="center" />
+    </FrameLayout>
+    <TextView android:textColor="#ffffffff" android:id="@id/locVidTimeShow" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

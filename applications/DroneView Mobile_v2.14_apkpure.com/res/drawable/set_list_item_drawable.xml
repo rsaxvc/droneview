@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/list_item_color" />
+    <corners android:topLeftRadius="@dimen/set_list_item_radius" android:topRightRadius="@dimen/set_list_item_radius" android:bottomLeftRadius="@dimen/set_list_item_radius" android:bottomRightRadius="@dimen/set_list_item_radius" />
+</shape>

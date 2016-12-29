@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/main_bg_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/top" android:layout_width="fill_parent" android:layout_height="@dimen/title_layout_height" style="@style/top_bg_style">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/color_white" android:layout_gravity="center_vertical" android:id="@id/tv_phonepic" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/local_picture" android:shadowColor="@color/color_shadow" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_centerInParent="true" />
+        <Button android:id="@id/btn1" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_phone" android:layout_weight="1.0" />
+        <Button android:textColor="@color/color_white" android:gravity="center" android:id="@id/picture_phone" android:background="@drawable/checktopleft_pressed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_phone" android:layout_weight="1.0" />
+        <Button android:textColor="@color/color_white" android:gravity="center" android:id="@id/picture_remote" android:background="@drawable/checkright_normal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_remote" android:layout_weight="1.0" />
+        <Button android:id="@id/btn2" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_phone" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ListView android:id="@id/piclistview" android:background="#00000000" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/listitem_pressed_selector" android:cacheColorHint="#00000000" android:divider="@color/color_divider" android:dividerHeight="1.0dip" android:fastScrollEnabled="true" android:fadeScrollbars="true" />
+</LinearLayout>

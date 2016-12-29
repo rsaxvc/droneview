@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/call_view" android:background="@color/bg_bule" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/unlockLayout" android:layout_alignParentTop="true">
+        <TextView android:textSize="24.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/call_view_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="" />
+        <ImageView android:id="@id/call_view_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/device_scene" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/unlockLayout" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_alignParentBottom="true">
+        <object.p2pwificam.clientActivity.SliderRelativeLayout android:id="@id/slider_layout" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+            <ImageView android:id="@id/call_start_ico" android:background="@drawable/call48" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/call_record_ico" android:background="@drawable/record48" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/call_stop11" android:background="@drawable/stop48" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/getup_arrow_up" android:background="@anim/slider_arrow_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/call_stop11" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/call_stop_ico" android:background="@drawable/stop48_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/getup_arrow_down" android:background="@anim/slider_arrow_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/call_stop_ico" android:layout_centerHorizontal="true" />
+            <TextView android:id="@id/slider_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_centerVertical="true" android:drawableStart="@drawable/buttonicon48" />
+            <ImageView android:id="@id/getup_arrow_left" android:background="@anim/slider_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/call_record_ico" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/getup_arrow" android:background="@anim/slider_tip_anim" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/call_start_ico" android:layout_centerVertical="true" />
+        </object.p2pwificam.clientActivity.SliderRelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

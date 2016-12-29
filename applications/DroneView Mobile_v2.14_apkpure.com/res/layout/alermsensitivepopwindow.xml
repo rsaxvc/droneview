@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scrollView1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/linearLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:gravity="center" android:id="@id/sensitive_4" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/alerm_sensitive_general" />
+            <ImageView android:id="@id/imageView1" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@color/color_line" />
+            <TextView android:gravity="center" android:id="@id/sensitive_3" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/alerm_sensitive_good" />
+            <ImageView android:id="@id/imageView2" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@color/color_line" />
+            <TextView android:gravity="center" android:id="@id/sensitive_2" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/alerm_sensitive_excellent" />
+            <ImageView android:id="@id/imageView3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@color/color_line" />
+            <TextView android:gravity="center" android:id="@id/sensitive_1" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/alerm_sensitive_optimal" />
+            <ImageView android:id="@id/imageView4" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@color/color_line" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

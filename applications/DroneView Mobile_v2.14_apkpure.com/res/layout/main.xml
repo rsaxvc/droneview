@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/bottom_tab" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:id="@id/bottom_tab1" android:background="@drawable/bottom_band_shape" android:layout_width="fill_parent" android:layout_height="55.0dip">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/main_layout_vidicon" android:background="@drawable/main_bottom_drawable" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/main_img_vidicon" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/main_device_drawable" />
+                <TextView android:textColor="@color/main_text_color" android:gravity="center" android:id="@id/main_tv_vidicon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_vidicon" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/main_layout_alarm" android:background="@drawable/main_bottom_drawable" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <ImageView android:id="@id/main_img_alarm" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/main_alarm_drawable" />
+                        <TextView android:textColor="@color/main_text_color" android:id="@id/main_tv_alarm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_event" />
+                    </LinearLayout>
+                    <ImageView android:visibility="gone" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/red_32" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/main_layout_pic" android:background="@drawable/main_bottom_drawable" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/main_img_picture" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/main_picture_drawable" />
+                <TextView android:textColor="@color/main_text_color" android:id="@id/main_tv_picture" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_pic" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/main_layout_more" android:padding="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/main_img_check" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/search" />
+                <TextView android:textColor="@color/main_text_color" android:gravity="center" android:id="@id/main_tv_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_more" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/main_layout_vid" android:background="@drawable/main_bottom_drawable" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/main_img_vid" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/main_video_drawable" />
+                <TextView android:textColor="@color/main_text_color" android:id="@id/main_tv_vid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_vid" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/main_layout_about" android:background="@drawable/main_bottom_drawable" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/main_img_about" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/main_about_drawable" />
+                <TextView android:textColor="@color/main_text_color" android:id="@id/main_tv_about" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_about" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_tab" android:layout_alignParentTop="true" />
+</RelativeLayout>

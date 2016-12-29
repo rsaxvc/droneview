@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/ipcammain" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/main_bg_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/bottom_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:layout_gravity="bottom" android:id="@id/main_img_bottom_line" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="4.0dip" android:layout_marginBottom="10.0dip" android:src="#ff0044ff" />
+        <LinearLayout android:id="@id/del_bottom_layout" android:background="#00000000" android:padding="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <Button android:textColor="@color/color_white" android:id="@id/main_selectall" android:background="@drawable/add_btn_selector" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:text="@string/main_select_all" android:layout_weight="1.0" />
+            <Button android:textColor="@color/color_white" android:id="@id/main_selectreverse" android:background="@drawable/add_btn_selector" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:text="@string/main_select_reverse" android:layout_weight="1.0" />
+            <Button android:textColor="@color/color_white" android:id="@id/main_delete_camera" android:background="@drawable/add_btn_selector" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/delete_camera" android:layout_weight="1.0" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_layout">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/top_relativeLayout" android:layout_width="fill_parent" android:layout_height="@dimen/title_layout_height" style="@style/top_bg_style">
+                <ImageView android:id="@id/app" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:src="@drawable/app" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/color_white" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:shadowColor="@color/color_shadow" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_toRightOf="@id/app" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/main_config" android:background="@drawable/config" android:visibility="gone" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="60.0dip" android:layout_alignParentRight="true" />
+                <Button android:textColor="@color/color_white" android:id="@id/main_edit" android:background="@drawable/btnselector" android:padding="5.0dip" android:focusable="true" android:layout_width="wrap_content" android:layout_height="38.0dip" android:layout_margin="5.0dip" android:text="@string/main_edit" android:layout_alignParentRight="true" />
+                <ImageButton android:id="@id/button_menu" android:background="@drawable/btn_back_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/options" android:scaleType="center" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/no_device_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="@color/top_band_start" android:layout_gravity="center_vertical" android:id="@id/no_device_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_device_tip" android:shadowColor="@color/color_shadow" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_centerInParent="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ListView android:id="@id/listviewCamera" android:background="#00000000" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/listitem_pressed_selector" android:cacheColorHint="#00000000" android:divider="@color/set_list_divider_color" android:dividerHeight="1.0dip" android:fastScrollEnabled="true" android:fadeScrollbars="true" />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

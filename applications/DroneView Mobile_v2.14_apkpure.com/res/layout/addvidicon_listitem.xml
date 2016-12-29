@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/listitem_pressed_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/vidicon" android:layout_width="70.0dip" android:layout_height="40.0dip" android:layout_marginLeft="8.0dip" android:src="@drawable/vidicon_add" android:scaleType="fitCenter" />
+    <TextView android:textColor="@color/main_text_color" android:gravity="center_vertical" android:id="@id/list_add_device" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginLeft="5.0dip" android:text="@string/main_tap_here_add_vidicon" />
+    <LinearLayout android:gravity="center|right" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <ImageButton android:id="@id/refresh" android:background="@drawable/listitem_pressed_selector" android:layout_width="50.0dip" android:layout_height="40.0dip" android:src="@drawable/refresh" android:scaleType="centerInside" />
+        <ProgressBar android:id="@id/progressBar1" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="15.0dip" />
+    </LinearLayout>
+</LinearLayout>

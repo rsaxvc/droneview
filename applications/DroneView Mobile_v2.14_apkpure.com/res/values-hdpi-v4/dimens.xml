@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="play_control_size">50.0dip</dimen>
+    <dimen name="play_control_height">36.0dip</dimen>
+    <dimen name="text_normal_size">12.0sp</dimen>
+    <dimen name="text_title_size">15.0sp</dimen>
+    <dimen name="drone_setup_texte_size">24.0px</dimen>
+    <dimen name="drone_setup_row_height">90.0px</dimen>
+</resources>

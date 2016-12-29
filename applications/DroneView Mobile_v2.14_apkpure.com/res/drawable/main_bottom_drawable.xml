@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="false" android:drawable="@color/top_band_start" />
+    <item android:state_selected="true" android:drawable="@color/main_select_color" />
+</selector>

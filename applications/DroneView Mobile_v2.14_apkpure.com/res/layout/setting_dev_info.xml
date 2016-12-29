@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/bg_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/top" android:layout_width="fill_parent" android:layout_height="50.0dip" style="@style/top_bg_style">
+        <ImageButton android:textSize="@dimen/text_title_size" android:textColor="@color/color_white" android:id="@id/back" android:background="@drawable/btn_back_selector" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/back_32" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/color_white" android:layout_gravity="center_vertical" android:id="@id/tv_camera_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/setting_device_info" android:shadowColor="@color/color_shadow" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ScrollView android:id="@id/scrollView1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/background_white_corner" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/linearLayout1" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_margin="5.0dip">
+                <TextView android:textColor="@color/color_black" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_version" android:layout_alignParentLeft="true" />
+                <TextView android:textColor="@color/color_black" android:id="@id/tv_device_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/upgrade_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/imageView1" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:src="@color/color_grey" />
+                <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_margin="5.0dip">
+                    <TextView android:textColor="@color/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upgrade_version" android:layout_alignParentLeft="true" />
+                    <TextView android:textColor="@color/color_black" android:id="@id/tv_upgrade_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:src="@color/color_grey" />
+                <Button android:id="@id/btnUpgrade" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/device_upgrade" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/upgrade_check_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:src="@color/color_grey" />
+                <Button android:id="@id/btnUpgradeCheck" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/device_upgrade_check" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

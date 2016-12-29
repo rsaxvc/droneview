@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sharemode">
+        <item>文字分享UID</item>
+        <item>圖片分享UID</item>
+    </string-array>
+    <string-array name="record_mode">
+        <item>關閉</item>
+        <item>報警錄像(1分鐘)</item>
+        <item>報警錄像(3分鐘)</item>
+        <item>報警錄像(5分鐘)</item>
+    </string-array>
+    <string-array name="event_menu">
+        <item>選擇刪除</item>
+        <item>删除10項</item>
+        <item>删除全部</item>
+        <item>設定</item>
+    </string-array>
+    <string-array name="main_menu">
+        <item>門鈴</item>
+        <item>事件</item>
+        <item>圖片</item>
+        <item>錄像</item>
+        <item>編輯</item>
+        <item>關於</item>
+    </string-array>
+</resources>

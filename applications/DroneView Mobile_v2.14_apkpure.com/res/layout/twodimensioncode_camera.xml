@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SurfaceView android:layout_gravity="center" android:id="@id/preview_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <object.p2pipcam.zxingtwodimensioncode.ViewfinderView android:id="@id/viewfinder_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:textSize="15.0sp" android:textStyle="bold" android:id="@id/btn_cancel_scan" android:layout_width="230.0dip" android:layout_height="40.0dip" android:layout_marginBottom="75.0dip" android:text="@string/str_cancel" android:layout_alignParentBottom="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</FrameLayout>

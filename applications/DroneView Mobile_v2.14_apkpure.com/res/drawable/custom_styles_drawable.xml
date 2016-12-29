@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="scroll_view_bg_style">
+        <item name="android:background">@drawable/jdt_bg</item>
+    </style>
+</resources>
