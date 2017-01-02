@@ -1,0 +1,18 @@
+rsaxvc@rsaxvc:~/code/john-1.8.0/run$ nice nice ./john ~/passwd
+Loaded 1 password hash (md5crypt [MD5 32/64 X2])
+Will run 24 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+ev1324           (root)
+1g 0:00:20:12 3/3 0.000824g/s 104157p/s 104157c/s 104157C/s ev199c..ev1r10
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed
+rsaxvc@rsaxvc:~/code/john-1.8.0/run$  telnet 192.168.234.1
+Trying 192.168.234.1...
+Connected to 192.168.234.1.
+Escape character is '^]'.
+
+ipc login: rsaxvc
+Password: 
+Welcome to HiLinux.
+None of nfsroot found in cmdline.
+# 
